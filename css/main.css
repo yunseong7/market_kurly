@@ -1,0 +1,536 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+}
+
+header{
+    min-width: 1050px;
+    width: 1200px;
+    margin: 0 auto 10px;
+}
+
+/* .top */
+.top{
+    display: flex;
+    width: 1050px;
+    height: 79px;
+    margin: 10px auto 0;
+}
+
+.top>li:nth-of-type(1){
+    width: 200px;
+}
+.top>li:nth-of-type(1) a{
+    width: 200px;
+}
+.top>li:nth-of-type(1) a img{
+    width: 121px;
+    height: 22px;
+}
+.top>li:nth-of-type(2){
+    width: 660px;
+}
+.top>li:nth-of-type(2) a{
+    display: block;
+    width: 660px;
+    height: 79px;
+    background-color: #ffffff;
+}
+.top>li:nth-of-type(2) a img{
+    display: block;
+    width: 103px;
+    height: 79px;
+    margin: 0 auto;
+}
+.top>li:nth-of-type(3){
+    width: 200px;
+}
+.top>li:nth-of-type(4){
+    display: none;
+}
+
+/* .login */
+.login_before{
+    display: flex;
+    width: 150px;
+    text-align: center;
+}
+
+.login_before li{
+    width: 70px;
+    font-size: 12px;
+}
+.login_before li a{
+    display: block;
+    width: 70px;
+    letter-spacing: -1px;
+    font-size: 12px;
+}
+.login_before li:nth-of-type(1){
+    border-right: 1px solid #d8d8d8;
+}
+.login_before li:nth-of-type(1) a{
+    color: #5f0080;
+}
+.login_after{
+    display: flex;
+}
+
+.gnb{
+    height: 80px;
+    line-height: 80px;
+    min-width: 1050px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: #ffffff;
+}
+/* .top_menu */
+.top_menu{
+    display: flex;
+    width: 1050px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto;
+    padding-top: 20px;
+    background-color: #ffffff;
+}
+.top_menu li{
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ffffff;
+}
+.top_menu li a{
+    font-size: 16px;
+}
+.top_menu li a .ico{
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin: 12px 12px 0 0;
+    background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off.png) no-repeat;
+}
+
+.top_menu .all_category{
+    width: 140px;
+    position: relative;
+}
+
+.top_menu .all_category:hover a{
+    color: #5f0080;
+    font-weight: 700;
+}
+.top_menu .all_category:hover:hover .ico{
+    background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all.png) no-repeat;
+}
+
+.top_menu .menu_btn{
+    width: 125px;
+}
+.top_menu .menu_btn a{
+    display: block;
+    width: 125px;
+}
+
+.top_menu .menu_btn:hover{
+    text-decoration: 2px underline #5f0080;
+}
+.top_menu .menu_btn:hover a{
+    color: #5f0080;
+}
+
+.top_menu .search_bar{
+    width: 243px;
+}
+.top_menu .search_bar form{
+    width: 240px;
+    height: 36px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.top_menu .search_bar .search_input{
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    width: 180px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+}
+.top_menu .search_bar .search_btn{
+    position: absolute;
+    right: 6px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.top_menu .top_menu_icon{
+    width: 60px;
+}
+.top_menu .top_menu_icon a{
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    margin: 0 12px;
+}
+.top_menu .delivery_btn{
+    background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1) no-repeat 50% 50%;
+}
+
+.top_menu .pick_btn{
+    background: url(https://res.kurly.com/pc/service/pick/btn-heart-off.svg) no-repeat 50% 50%;
+}
+
+.top_menu .cart_btn{   
+    background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%;
+}
+
+.top_menu .delivery_btn:hover{
+    background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting_on.svg?ver=1) no-repeat 50% 50%;
+}
+.top_menu .pick_btn:hover{
+    background: url(https://res.kurly.com/pc/service/pick/btn-heart-hover.svg) no-repeat 50% 50%;
+}
+.top_menu .cart_btn:hover{  
+    background: url(https://res.kurly.com/pc/service/common/2011/ico_cart_on.svg?v=1) no-repeat 50% 50%
+}
+
+/* sub_menu */
+.sub_menu{
+    position: absolute;
+    width: 200px;
+    display: none;
+    border: 1px solid #d8d8d8;
+    background-color: #ffffff;
+    z-index: 999;
+}
+.sub_menu li{
+    width: 200px;
+    height: 40px;
+    text-align: left;
+    line-height: 40px;
+}
+.sub_menu li a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    padding: 7px 15px 5px;
+    position: relative;
+}
+.sub_menu li a img{
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 15px;
+}
+.sub_menu li a span{
+    height: 24px;
+    position: absolute;
+    left: 50px;
+    line-height: 24px;
+}
+
+.sub_menu li:hover{
+    background-color: #f8f8f8;
+}
+
+.sub_menu li:nth-of-type(1):hover a img{
+    content: url("../data/img/vegetable_on.webp");
+}
+.sub_menu li:nth-of-type(2):hover a img{
+    content: url("../data/img/meat_on.webp");
+}
+.sub_menu li:nth-of-type(3):hover a img{
+    content: url("../data/img/fruit_on.webp");
+}
+.sub_menu li:nth-of-type(4):hover a img{
+    content: url("../data/img/seafood_on.webp");
+}
+.sub_menu li:nth-of-type(5):hover a img{
+    content: url("../data/img/dish_on.webp");
+}
+.sub_menu li:nth-of-type(6):hover a img{
+    content: url("../data/img/salad_on.webp");
+}
+.sub_menu li:nth-of-type(7):hover a img{
+    content: url("../data/img/noodle_on.webp");
+}
+.sub_menu li:nth-of-type(8):hover a img{
+    content: url("../data/img/health_on.webp");
+}
+
+.sub_menu li:hover a span{
+    color: #5f0080;
+}
+
+/* #banner */
+#banner{
+    min-width: 1050px;
+    width: 100%;
+    height: 370px;
+    margin-bottom: 100px;
+}
+.bannerSwiper{
+    min-width: 1050px;
+    width: 100%;
+    height: 370px;
+    position: relative;
+}
+.bannerSwiper .swiper-slide img{
+    min-width: 1050px;
+    width: 100%;
+    height: 370px;
+}
+#banner .swiper-button-prev,
+#banner .swiper-button-next{
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+#banner .swiper-button-prev{
+    left: 15%;
+}
+#banner .swiper-button-next{
+    right: 15%;
+}
+#banner .swiper-button-prev::after,
+#banner .swiper-button-next::after{
+    display: none;
+}
+
+/* main */
+main{
+    width: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 28px;
+    font-weight: 600;
+}
+/* #productList */
+#productList{
+    min-width: 1050px;
+    width: 70%;
+    margin: 0 auto;
+}
+.productSwiper{
+    width: 100%;
+    position: relative;
+}
+#productList .swiper-button-prev,
+#productList .swiper-button-next{
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    color: #000;
+    z-index: 999;
+}
+#productList .swiper-button-prev{
+    left: 0px;
+}
+#productList .swiper-button-next{
+    right: 0;
+}
+#productList .swiper-button-prev::after,
+#productList .swiper-button-next::after{
+    display: none;
+}
+
+/* 중간배너 */
+.middleBanner{
+    min-width: 1050px;
+    max-width: 70%;
+    margin: 130px auto;
+}
+.middleBanner a{
+    min-width: 1050px;
+    max-width: 100%;
+}
+.middleBanner img{
+    width: 100%;
+}
+.semititle{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+}
+.titlelink{
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5f0080;
+}
+/* #instagramCustomer */
+#instagramCustomer{
+    width: 1050px;
+    margin: 0 auto;
+}
+.instagramList{
+    width: 100%;
+    display: flex;
+}
+.instagramList li{
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+}
+.instagramList li a{
+    display: block;
+    width: 175px;
+    height: 175px;
+}
+.instagramList li a img{
+    width: 175px;
+    height: 175px;
+    filter: grayscale(1);
+    transition: .5s;
+}
+
+.instagramList li a img:hover{
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+/* footer */
+footer{
+    min-width: 1050px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+.leftFooter{
+    width: 50%;
+}
+.customerTitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.customerService{
+    display: flex;
+    margin: 20px 0;
+}
+.customerLeft{
+    margin-right: 20px;
+}
+.customerLeft li{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.customerLeft h3{
+    font-size: 28px;
+}
+.customerLeft li button{
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+}
+.customerLeft li  button a{
+    color: #000;
+}
+.customerRight{}
+.customerRight li{
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.4;
+}
+.rightFooter{
+    width: 50%;
+    padding-left: 5px;
+}
+.informationKey{
+    display: flex;
+    height: 20px;
+    margin: 0 auto 20px;
+}
+.informationKey li{
+    margin-right: 17px;
+    height: 20px;
+    list-style: 20px;
+}
+.informationKey li:last-of-type{
+    margin-right: 0;
+}
+.informationKey li a{
+    font-size: 14px;
+}
+
+.informationList{
+    width: 520px;
+}
+.informationList li{
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 5px;
+}
+
+.informationList li a{
+    color: #5f0080;
+}
+
+.informationSNS{
+    display: flex;
+    width: 200px;
+    margin-top: 40px;
+}
+.informationSNS li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.informationSNS li:last-of-type{
+    margin-right: 0;
+}
+.informationSNS li a{}
+.informationSNS li a img{
+    width: 100%;
+}
+
+#bottom{
+    width: 100%;
+    min-width: 1050px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 10px;
+}
+
+#bottom p{
+    color: #999;
+    padding: 20px 0;
+}
+#bottom h5{
+    color: #999;
+}
